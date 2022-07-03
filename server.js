@@ -17,10 +17,9 @@ const db = knex({
     client: 'pg',
     connection: {
       host : '127.0.0.1',
-      port : 5432, //THIS IS NOT 3001!!!!!!! CHANGE IT TO THE PORT OF THE DATABASE
-      user : 'postgres',
-      password : 'test',
-      database : 'smart-brain'
+      ssl: {
+        rejectUnauthorized: false
+      }
     }
   });
 
@@ -35,7 +34,7 @@ app.use(cors());
 
 
 
-app.get("/", (req,res) => { res.send("it is working!") })
+//app.get("/", (req,res) => { res.send("it is working!") })
 
 //Sign-in Code using POST
 // ----------------------------------------------------
