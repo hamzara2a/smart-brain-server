@@ -35,6 +35,7 @@ app.use(cors());
 
 
 
+app.get("/", (req,res) => { res.send("it is working!") })
 
 //Sign-in Code using POST
 // ----------------------------------------------------
