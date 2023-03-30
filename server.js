@@ -16,7 +16,7 @@ const knex = require('knex')
 const db = knex({
     client: 'pg',
     connection: {
-      connectionString: process.env.DATABASE_URL,
+      connectionString: "postgres://smartbrain_db_6jm8_user:T7RZQSOhDaz4F94e4Wr4pDFCWI8rvx7e@dpg-cgii9h1r8t1g7lpir790-a.singapore-postgres.render.com/smartbrain_db_6jm8",
       ssl: {
         rejectUnauthorized: false
       }
