@@ -58,26 +58,3 @@ app.post("/imageurl", (req,res) => { image.handleApiCall(req, res) })
 app.listen(3000, ()=> {
     console.log(`app is running on port 3000`);
   })
-
-
-  /* CREATE TABLE login(
-    id serial PRIMARY KEY,
-    hash varchar(100) NOT NULL,
-    email text UNIQUE NOT NULL
-); 
-
-
-CREATE TABLE users(
-    id serial PRIMARY KEY,
-    name VARCHAR(100),
-    email text UNIQUE NOT NULL,
-    entries BIGINT DEFAULT 0,
-    joined TIMESTAMP NOT NULL
-);
-
-
-original PGAdmin Post: 5432
-
-
-
-*/
